@@ -6,7 +6,7 @@ package org.example;
 public class MatrixPrint {
 
     /**
-     * Виводить матрицю у консоль у вигляді таблиці.
+     * Виводить матрицю у консоль.
      * @param m матриця для виводу
      */
     public void print(Matrix m) {

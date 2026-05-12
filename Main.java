@@ -7,18 +7,15 @@ public class Main {
             MatrixPrint printer = new MatrixPrint();
 
             // Вхідні дані
-            int[][] dataA = {
+            Matrix a = new Matrix(new int[][] {
                     {1, 3},
                     {2, 4}
-            };
+            });
 
-            int[][] dataB = {
+            Matrix b = new Matrix(new int[][] {
                     {5, 6},
                     {7, 8}
-            };
-
-            Matrix a = new Matrix(dataA);
-            Matrix b = new Matrix(dataB);
+            });
 
             // Виконуємо першу дію (множення)
             Matrix c = ops.multiply(a, b);
@@ -28,7 +25,7 @@ public class Main {
             printer.print(c);
 
             // Виконуємо другу дію
-            long result = ops.calculateSpecialSum(c);
+            int result = ops.calculateSpecialSum(c);
             System.out.println("\nРезультат другої дії (Сума найбільших елементів " +
                     "непарних стовпців та найменших парних): " + result);
 

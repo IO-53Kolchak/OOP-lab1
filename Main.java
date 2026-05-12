@@ -30,7 +30,7 @@ public class Main {
             // Виконуємо другу дію
             long result = ops.calculateSpecialSum(c);
             System.out.println("\nРезультат другої дії (Сума найбільших елементів " +
-                    "непарних стовпців та найменших парних):  " + result);
+                    "непарних стовпців та найменших парних): " + result);
 
         } catch (Exception e) {
             System.err.println("Помилка: " + e.getMessage());
